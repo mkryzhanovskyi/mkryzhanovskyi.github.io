@@ -1,7 +1,165 @@
 <!DOCTYPE HTML>
-<html>
-<body>
-<h1>Hello World</h1>
-<p>This is a test page.</p>
+<html lang="en">
+
+<head>
+
+<title>Home Page</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"></head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<style>
+    a {
+        color:#4fb327;
+    }
+
+    a:hover{
+        color: #337519;
+    }
+</style>
+
+</head>
+
+<body style="margin-bottom: 3px;">
+
+<div class="container-fluid" style="background-color: #404040; color: white; height: 60px;">
+    <image src="https://saasam.saas.saasam.co.nz/ui/images/prj_1601/gif/logo/Green%20and%20White%20SaaSam%20Logo%20Small.png?r=24427" style="margin-top: 5px">  <b>Wiki</b></image>
+</div>
+
+<div class="container-fluid">
+<div class="row" style="border-bottom-style: solid; border-bottom-color: black;">
+    <div class="col-sm-4" style="text-align: left;">
+        <h2>All Articles</h2>
+    </div>
+    <div class="col-sm-4"></div>
+    <div class="com-sm-4"></div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">System <i class="fas fa-desktop"></i></h4>
+                <p class="card-text">Articles related to the system setup and general settings.</p>
+                <ul>
+                    <li><a href="images_article.html" class="card-link">Logo Image Restrictions in Agiloft <span class="badge badge-dark">New</span></a></li>
+                    <li><a href="esignature_article.html" class="card-link">DocuSign and Adobe Sign: Message to Signer</a></li>
+                    <li><a href="#" class="card-link">Radio buttons and checkboxes skins <span class="badge badge-dark">New</span></a></li>
+                </ul>
+                <a href="#" class="card-link">See all system articles</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Formulas and syntax <i class="fas fa-book"></i></h4>
+                <p class="card-text">Articles regarding Agiloft formulas and their syntax.</p>
+                <ul>
+                    <li><a href="#" class="card-link">Adding Days to the Date field, based on the Integer field value</a></li>
+                    <li><a href="#" class="card-link">Turning a Text field value into UPPERCASE <span class="badge badge-danger">Pending Approval</span></a></li>
+                    <li><a href="#" class="card-link">Concatenate String values</a></li>
+                </ul>
+                <a href="#" class="card-link">See all formula articles</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card" style="border-color: white;">
+            <div class="card-body">
+                <h4 class="card-title">Recently Viewed <i class="fas fa-clock"></i></h4>
+                <p class="card-text"></p>
+                <ul>
+                    <li><a href="#" class="card-link" id="recentlyViewed_1">Import/Export <span class="badge badge-dark">New</span></a></li>
+                    <li><a href="#" class="card-link" id="recentlyViewed_2">Single Sign-On <span class="badge badge-warning">Updated</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Developer Articles <i class="fas fa-code"></i></h4>
+                <p class="card-text">Articles to help developers with advanced topics.</p>
+                <ul>
+                    <li><a href="#" class="card-link">Agiloft APIs</a></li>
+                    <li><a href="#" class="card-link">Single Sign-On <span class="badge badge-warning">Updated</span></a></li>
+                    <li><a href="#" class="card-link">Integrations with other systems</a></li>
+                </ul>
+                <a href="#" class="card-link">See all developer articles</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Tutorials <i class="fas fa-video"></i></h4>
+                <p class="card-text">Tutorials for Agiloft, SaaSam and other systems used by SaaSam.</p>
+                <ul>
+                    <li><a href="#" class="card-link">Import/Export <span class="badge badge-dark">New</span></a></li>
+                    <li><a href="#" class="card-link">Fields <span class="badge badge-warning">Updated</span></a></li>
+                    <li><a href="#" class="card-link">Permissions: Groups & Teams</a></li>
+                </ul>
+                <a href="#" class="card-link">See all tutorials</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card" style="border-color: white;">
+            <div class="card-body">
+                <h4 class="card-title">My Saved Articles <i class="fas fa-save"></i></h4>
+                <p class="card-text"></p>
+                <ul>
+                    <li><a href="#" class="card-link" id="savedArticle_1">Fields <span class="badge badge-warning">Updated</span></a></li>
+                    <li><a href="#" class="card-link" id="savedArticle_2">Single Sign-On <span class="badge badge-warning">Updated</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<br>
+<div class="container-fluid">
+<div class="row">
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">SaaSam Templates <i class="fas fa-copy"></i></h4>
+                <p class="card-text">Articles providing guidance on different SaaSam templates.</p>
+                <ul>
+                    <li><a href="#" class="card-link">Change Request Template <span class="badge badge-danger">Pending Approval</span></a></li>
+                    <li><a href="#" class="card-link">Quote Template</a></li>
+                    <li><a href="#" class="card-link">CMS Implementation Template</a></li>
+                </ul>
+                <a href="#" class="card-link">See all template articles</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4">
+        <div class="card">
+            <div class="card-body">
+                <h4 class="card-title">Documentation <i class="fas fa-file-alt"></i></h4>
+                <p class="card-text">Documentation for SaaSam products and implemented systems.</p>
+                <ul>
+                    <li><a href="#" class="card-link">Agiloft CMS Documentation <span class="badge badge-info">View Only</span></a></li>
+                    <li><a href="#" class="card-link">Agiloft ITIL Documentation <span class="badge badge-info">View Only</span></a></li>
+                    <li><a href="#" class="card-link">SaaSam Wiki Documentation <span class="badge badge-info">View Only</span></a></li>
+                </ul>
+                <a href="#" class="card-link">See all documentation articles</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-sm-4"></div>
+</div>
+</div>
+
 </body>
+
 </html>
